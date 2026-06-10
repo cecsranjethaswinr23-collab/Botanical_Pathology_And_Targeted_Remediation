@@ -4,3 +4,9 @@ __pycache__/
 .ipynb_checkpoints/
 .DS_Store
 app/backend/trained_model/
+requirements.txt
+docker-compose.yml
+app/Dockerfile.frontend
+app/Dockerfile.backend
+app/backend/class_indices.json
+app/backend/treatment_data.json
