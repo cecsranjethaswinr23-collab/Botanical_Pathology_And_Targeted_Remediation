@@ -1,1 +1,1 @@
-hello
+the model and json file(treatment and indices data) uploaded
