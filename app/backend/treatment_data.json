@@ -1,6 +1,4 @@
-import json
-
-disease_data = {
+{
     "tomato_bacterial_spot": {
         "disease_name": "Tomato Bacterial Spot",
         "how_to_handle_infected_leaves": "Prune and remove infected leaves during dry weather to prevent spreading. Destroy or deeply bury the infected plant debris; do not compost them.",
