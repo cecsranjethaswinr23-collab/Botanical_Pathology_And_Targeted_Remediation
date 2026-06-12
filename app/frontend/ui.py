@@ -5,16 +5,16 @@ import io
 
 # Set up page configurations
 st.set_page_config(
-    page_title="Botanical Pathology and Remediation System",
-    page_icon="🌿",
+    page_title="plant doctor",
+    page_icon="👨‍⚕️",
     layout="centered"
 )
 
 # --- 1. TITLE & DESCRIPTION ---
 st.title("Botanical Pathology and Remediation System 🌿")
 st.markdown("""
-Upload a image of a tomato plant leaf below. 
-Trained CNN model will analyze it via our FastAPI backend and return immediate localized treatment recommendations.
+Upload a image of a tomato plant's leaf below. 
+A trained CNN model will analyze it via our FastAPI backend and return immediate localized treatment recommendations.
 """)
 
 st.write("---")
@@ -25,7 +25,7 @@ BACKEND_URL = "http://127.0.0.1:8000/predict"
 
 # --- 3. IMAGE UPLOADER WIDGET ---
 uploaded_file = st.file_uploader(
-    "Choose a tomato plant leaf image file...", 
+    "Choose a tomato plant leaf image...", 
     type=["jpg", "jpeg", "png"]
 )
 

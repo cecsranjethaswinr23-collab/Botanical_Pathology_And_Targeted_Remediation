@@ -1,5 +1,5 @@
 {
-    "tomato_bacterial_spot": {
+    "Tomato___Bacterial_spot": {
         "disease_name": "Tomato Bacterial Spot",
         "how_to_handle_infected_leaves": "Prune and remove infected leaves during dry weather to prevent spreading. Destroy or deeply bury the infected plant debris; do not compost them.",
         "how_to_irrigate": "Avoid overhead sprinkler irrigation which splashes bacteria onto healthy leaves. Use drip irrigation or furrow irrigation to keep foliage completely dry. Water early in the morning.",
@@ -8,7 +8,7 @@
         "precautions_to_prevent_recurrence": "Use certified disease-free seeds and transplants. Practice a 2-3 year crop rotation with non-solanaceous crops. Clean and sanitize tools, stakes, and equipment regularly.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "tomato_early_blight": {
+    "Tomato___Early_blight": {
         "disease_name": "Tomato Early Blight",
         "how_to_handle_infected_leaves": "Remove lower infected leaves early in the season to prevent the fungus from climbing up the plant. Burn or dispose of debris far away from the plot.",
         "how_to_irrigate": "Apply water directly to the soil using drip lines or soaker hoses. Avoid wetting the leaves, as the fungal spores require moisture to germinate.",
@@ -17,7 +17,7 @@
         "precautions_to_prevent_recurrence": "Maintain excellent plant spacing for air circulation. Stake and cage tomato plants up off the ground. Mulch the soil surface to prevent soil-borne spores from splashing onto lower leaves.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "tomato_healthy": {
+    "Tomato___healthy": {
         "disease_name": "Tomato Healthy",
         "how_to_handle_infected_leaves": "No infected leaves present. Maintain standard pruning of lower yellowing or old non-productive leaves to improve aeration.",
         "how_to_irrigate": "Provide consistent moisture (approx. 1-1.5 inches per week) using drip irrigation. Avoid waterlogging or extreme dry-to-wet moisture swings to prevent blossom end rot.",
@@ -26,7 +26,7 @@
         "precautions_to_prevent_recurrence": "Continue robust crop rotation, weed management, and maintain optimum soil nutrition based on periodic soil testing.",
         "professional_consultation_disclaimer": "To maintain high yields and ideal crop health, please also refer to and consult with agricultural professionals or local extension offices nearby for customized crop schedules."
     },
-    "tomato_late_blight": {
+    "Tomato___Late_blight": {
         "disease_name": "Tomato Late Blight",
         "how_to_handle_infected_leaves": "Highly contagious. Immediately bag and remove the entire infected plant if symptoms are widespread, or carefully strip infected leaves. Do not compost; burn or bury deeply.",
         "how_to_irrigate": "Strictly use drip irrigation. Ensure watering happens in the morning so any accidental moisture evaporates quickly. Minimize humidity within the plant canopy.",
@@ -35,7 +35,7 @@
         "precautions_to_prevent_recurrence": "Plant resistant tomato varieties. Avoid planting tomatoes near potatoes. Destroy any volunteer tomato or potato plants in the off-season.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "tomato_leaf_mold": {
+    "Tomato___Leaf_Mold": {
         "disease_name": "Tomato Leaf Mold",
         "how_to_handle_infected_leaves": "Remove infected leaves carefully to avoid releasing thousands of airborne spores. Improve ventilation inside greenhouses or polyhouses.",
         "how_to_irrigate": "Water early in the day directly at the root zone. Avoid overhead irrigation completely to keep relative humidity below 85%.",
@@ -44,7 +44,7 @@
         "precautions_to_prevent_recurrence": "Increase spacing between plants and prune lower branches to enhance airflow. Grow tomatoes in well-ventilated structures. Use resistant cultivars.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "tomato_septoria_leaf_spot": {
+    "Tomato___Septoria_leaf_spot": {
         "disease_name": "Tomato Septoria Leaf Spot",
         "how_to_handle_infected_leaves": "Prune off severely spotted lower leaves as soon as they appear. Wash hands and sanitize tools before touching healthy plants.",
         "how_to_irrigate": "Use drip hoses or ground watering systems. Avoid overhead watering since spores are easily spread via water droplets and splashing.",
@@ -53,7 +53,7 @@
         "precautions_to_prevent_recurrence": "Eliminate solanaceous weeds (like nightshade) around the field. Practice strict crop rotation. Mulch thoroughly around the base of the tomato plants.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "spider_mites_two_spotted_spider_mite": {
+    "Tomato___Spider_mites_Two_spotted_spider_mite": {
         "disease_name": "Spider Mites (Two-Spotted Spider Mite)",
         "how_to_handle_infected_leaves": "Remove heavily infested leaves or sections showing severe webbing and yellow stippling. Bag and discard them away from the field.",
         "how_to_irrigate": "Ensure the crop is not water-stressed, as dry and dusty conditions accelerate mite reproduction. Overhead misting can sometimes physically knock mites off, but balances with fungal risks.",
@@ -62,7 +62,7 @@
         "precautions_to_prevent_recurrence": "Keep field borders free of weeds that harbor mites. Keep dust down on farm pathways. Encourage or release natural predators like predatory mites, lacewings, or ladybugs.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "tomato_target_spot": {
+    "Tomato___Target_Spot": {
         "disease_name": "Tomato Target Spot",
         "how_to_handle_infected_leaves": "Pick off affected leaves with concentric target-like rings to minimize spore production. Dispose of all infected crop residues after harvest.",
         "how_to_irrigate": "Irrigate at the base of the plant using drip systems. Keep the canopy as dry as possible to reduce the high humidity periods required by this fungus.",
@@ -71,7 +71,7 @@
         "precautions_to_prevent_recurrence": "Maintain open plant canopy with wide spacing and proper staking. Avoid planting continuous solanaceous crops. Control weed hosts.",
         "professional_consultation_disclaimer": "Chemical recommendations can vary based on local regulations and resistance patterns. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     },
-    "tomato_mosaic_virus": {
+    "Tomato___Tomato_mosaic_virus": {
         "disease_name": "Tomato Mosaic Virus (ToMV)",
         "how_to_handle_infected_leaves": "Do not just remove leaves. Immediately pull up and discard the entire infected plant including roots. Burn or deeply bury them. Do not touch healthy plants after handling infected ones.",
         "how_to_irrigate": "Irrigate normally via drip. Avoid physical contact with water hoses or moving through wet fields, as the virus spreads mechanically via clothing and tools.",
@@ -80,7 +80,7 @@
         "precautions_to_prevent_recurrence": "Grow certified virus-free seeds or resistant varieties (look for ToMV resistance). Wash hands with soap and water/milk before handling plants. Prohibit smoking/tobacco handling near the farm.",
         "professional_consultation_disclaimer": "Viral diseases can spread rapidly and devastate crops. Please also refer to and consult with agricultural professionals or local extension offices nearby for testing and containment advice."
     },
-    "tomato_yellow_leaf_curl_virus": {
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
         "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
         "how_to_handle_infected_leaves": "Pull out and destroy entire infected plants immediately to reduce the reservoir for whiteflies. Place them in plastic bags before removal to avoid spreading vector insects.",
         "how_to_irrigate": "Standard drip irrigation. Maintain optimal water supply to prevent stress, which makes plants more susceptible to vector damage.",
@@ -90,10 +90,3 @@
         "professional_consultation_disclaimer": "Vector management is critical to halting virus spread. Please also refer to and consult with agricultural professionals or local extension offices nearby before applying chemical treatments."
     }
 }
-"""
-file_path = "tomato_diseases_management.json"
-with open(file_path, "w", encoding="utf-8") as f:
-    json.dump(disease_data, f, indent=4)
-
-print(f"JSON file generated successfully at: {file_path}")
-"""

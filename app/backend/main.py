@@ -8,13 +8,13 @@ from PIL import Image
 import io
 
 # Initialize the FastAPI application instance
-app = FastAPI(title="PhytoIntel Backend API")
+app = FastAPI(title="plant doctor")
 
 # --- 1. DYNAMIC FILE PATH PATH CONFIGURATIONS ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Adjusting filenames to match your exact repository structure
-MODEL_PATH = os.path.join(BASE_DIR, "trained_model", "plant_disease_diagnostic_model.h5") 
+MODEL_PATH = os.path.join(BASE_DIR, "trained_model", "plant_disease_diagnostic_CNN.h5") 
 CLASSES_PATH = os.path.join(BASE_DIR, "class_indices.json")
 TREATMENTS_PATH = os.path.join(BASE_DIR, "treatment_data.json")
 
@@ -40,7 +40,9 @@ except Exception as e:
 
 # --- 3. HELPER FUNCTION FOR IMAGE PREPROCESSING ---
 def preprocess_image(image_bytes: bytes) -> np.ndarray:
+
     """Converts uploaded raw file bytes to normalized tensors matching CNN structure."""
+    
     img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
     img = img.resize((224, 224))                         # Resize to your model's input size
     img_array = np.array(img).astype("float32") / 255.0  # Normalize pixel arrays
