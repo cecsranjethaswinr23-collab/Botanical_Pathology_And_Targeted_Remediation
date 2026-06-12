@@ -25,7 +25,7 @@ BACKEND_URL = "http://127.0.0.1:8000/predict"
 
 # --- 3. IMAGE UPLOADER WIDGET ---
 uploaded_file = st.file_uploader(
-    "Choose a tomato plant leaf image...", 
+    "Choose a tomato plant leaf image...(only .jpg)", 
     type=["jpg", "jpeg", "png"]
 )
 
@@ -57,9 +57,10 @@ if uploaded_file is not None:
                     # Extract elements returned by backend dictionary logic
                     disease_name = result.get("disease", "Unknown Condition")
                     details = result.get("treatment_details", {})
+                    confi = result.get("confidence")
                     
                     # --- 4. DISPLAY DIAGNOSIS RESULTS ---
-                    st.success(f"### Diagnosis Result: **{disease_name}**")
+                    st.success(f"### Diagnosis Result: **{disease_name}** with {confi:.2f}% confidense rate.")
                     
                     st.markdown("### 📋 Recommended Treatment & Action Plan")
                     

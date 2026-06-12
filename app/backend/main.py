@@ -14,9 +14,17 @@ app = FastAPI(title="plant doctor")
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Adjusting filenames to match your exact repository structure
-MODEL_PATH = os.path.join(BASE_DIR, "trained_model", "plant_disease_diagnostic_CNN.h5") 
+MODEL_PATH = os.path.normpath(os.path.join(BASE_DIR, "trained_model", "plant_disease_diagnostics_CNN.h5"))
 CLASSES_PATH = os.path.join(BASE_DIR, "class_indices.json")
 TREATMENTS_PATH = os.path.join(BASE_DIR, "treatment_data.json")
+
+# Diagnostics for the file existance
+print("\n=== SYSTEM PATH CHECK ===")
+print(f"BASE_DIR calculated as: {BASE_DIR}")
+print(f"Looking for Model at:   {MODEL_PATH} -> Exists? {os.path.exists(MODEL_PATH)}")
+print(f"Looking for Classes at: {CLASSES_PATH} -> Exists? {os.path.exists(CLASSES_PATH)}")
+print(f"Looking for Treatments at: {TREATMENTS_PATH} -> Exists? {os.path.exists(TREATMENTS_PATH)}")
+print("=========================\n")
 
 
 # --- 2. LOAD COMPONENT RESOURCES AT SERVER STARTUP ---
@@ -43,10 +51,10 @@ def preprocess_image(image_bytes: bytes) -> np.ndarray:
 
     """Converts uploaded raw file bytes to normalized tensors matching CNN structure."""
     
-    img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
-    img = img.resize((224, 224))                         # Resize to your model's input size
-    img_array = np.array(img).astype("float32") / 255.0  # Normalize pixel arrays
-    img_array = np.expand_dims(img_array, axis=0)        # Expand to batch dimension shape: (1, 224, 224, 3)
+    img = Image.open(io.BytesIO(image_bytes)).convert("RGB")  # From the frontend it fetches the file that was converted into bytes and it is opened here
+    img = img.resize((224, 224))                              # Resize to your model's input size
+    img_array = np.array(img).astype("float32") / 255.0       # Normalize pixel arrays
+    img_array = np.expand_dims(img_array, axis=0)             # Expand to batch dimension shape: (1, 224, 224, 3)
     return img_array
 
 
@@ -67,13 +75,14 @@ async def predict(file: UploadFile = File(...)):
         
         # Execute forward pass inference on your CNN
         predictions = model.predict(processed_image)
-        class_idx = str(np.argmax(predictions[0])) 
+        class_index = str(np.argmax(predictions[0]))
+        confidence = float(predictions[0].max()*100)
         
         # Step 1: Extract disease string flag from class_indices.json using prediction number index
-        raw_disease_name = class_indices.get(class_idx, "Unknown")
+        raw_disease_name = class_indices.get(class_index, "Unknown")
         
         # Normalize the string formatting into a snake_case key to securely access treatment_data.json keys
-        lookup_key = raw_disease_name.lower().strip().replace(" ", "_")
+        lookup_key = raw_disease_name
         
         # Step 2: Fetch the complete dataset dictionary using the generated key flag lookup
         treatment = treatment_data.get(lookup_key, {
@@ -88,8 +97,9 @@ async def predict(file: UploadFile = File(...)):
         
         # Step 3: Return the structured application payload back to the awaiting Streamlit layout
         return {
-            "prediction_index": int(class_idx),
+            "prediction_index": int(class_index),
             "disease": treatment.get("disease_name", raw_disease_name),
+            "confidence": confidence,
             "treatment_details": treatment
         }
         
@@ -99,7 +109,7 @@ async def predict(file: UploadFile = File(...)):
 
 @app.get("/")
 def health_check():
-    return {"status": "healthy", "service": "PhytoIntel API Active"}
+    return {"status": "healthy", "service": "Plant diagnosis and treatment"}
 
 
 if __name__ == "__main__":
