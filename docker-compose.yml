@@ -4,17 +4,17 @@ services:
   backend:
     build:
       context: .
-      dockerfile: app/Dockerfile.backend
+      dockerfile: Dockerfile.backend
+    container_name: plant_doc_backend
     ports:
       - "8000:8000"
-    restart: always  # <--- THIS TELLS DOCKER TO START THE CONTAINER ON SYSTEM BOOT
 
   frontend:
     build:
       context: .
-      dockerfile: app/Dockerfile.frontend
+      dockerfile: Dockerfile.frontend
+    container_name: plant_doc_frontend
     ports:
       - "8501:8501"
-    restart: always  # <--- THIS TELLS DOCKER TO START THE CONTAINER ON SYSTEM BOOT
     depends_on:
       - backend
