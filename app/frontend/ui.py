@@ -12,6 +12,7 @@ st.set_page_config(
 
 # ABOUt sidebar
 st.sidebar.title("About")
+# sidebar markdown 1
 st.sidebar.markdown("""
 ### 🎯 WHAT IT DOES:
 This Deep Learning application specializes in high-accuracy image recognition. 
@@ -23,6 +24,13 @@ the plants can be treated with various remedies the model gives like how to trea
 leaves, irrigation, pesticides to use and so. This reduces the time to treat the plants, decrease 
 the spread of infections and helps in increasing the yield.
 """)
+# sidebar markdown 2
+st.sidebar.markdown("""
+#### 🫠 WHAT IT IS TRAINED ON:
+This model specifically trained on Nine disease in Tomato like bacteril spot, late blight,leaf mold, leaf spots, mosaic virus,
+target spot, curl virus, spider mites and also finds the healthy plant. 
+
+""")
 st.sidebar.subheader("🛠️ Tech Stack")
 tech_stack = [
     "Python",
@@ -30,8 +38,8 @@ tech_stack = [
     "FastAPI",
     "Streamlit",
     "OpenCV",
-    "NumPy & Pandas",
-    "etc.."
+    "NumPy",""
+    "Pandas"
 ]
 for tech in tech_stack:
     st.sidebar.markdown(f"- **{tech}**")
@@ -66,7 +74,7 @@ BACKEND_URL = "http://127.0.0.1:8000/predict"
 
 # --- 3. IMAGE UPLOADER WIDGET ---
 uploaded_file = st.file_uploader(
-    "Choose a tomato plant leaf image...(only 🪴.jpg)", 
+    "Choose a tomato plant leaf image...(only 🍅🪴.jpg)", 
     type=["jpg"]
 )
 
@@ -78,7 +86,7 @@ if uploaded_file is not None:
     st.write("---")
     
     # Add a prominent analysis trigger button
-    if st.button("🔍 Predict", type="primary"):
+    if st.button("🔍 Run Diagnose", type="primary"):
         with st.spinner("Uploading image to inference backend and analyzing..."):
             try:
                 # Convert the uploaded file into raw bytes to transfer over HTTP
@@ -112,13 +120,13 @@ if uploaded_file is not None:
                     with st.expander("💧 Irrigation adjustments", expanded=True):
                         st.write(details.get("how_to_irrigate", "N/A"))
                         
-                    with st.expander("🧪 Chemical Treatment Options", expanded=True):
+                    with st.expander("⚗️ Chemical Treatment Options", expanded=True):
                         st.write(details.get("chemicals_for_treatment", "N/A"))
                         
-                    with st.expander("🇮🇳 Locally Available Options (India)", expanded=True):
+                    with st.expander("🧪 Locally Available Options (India)", expanded=True):
                         st.info(details.get("locally_available_chemicals_in_india", "N/A"))
                         
-                    with st.expander("🛡️ Long-term Recurrence Prevention", expanded=False):
+                    with st.expander("🛡️ Long-term Recurrence Prevention", expanded=True):
                         st.write(details.get("precautions_to_prevent_recurrence", "N/A"))
                         
                     # Noticeable disclaimer footer box
