@@ -10,14 +10,55 @@ st.set_page_config(
     layout="centered"
 )
 
+# ABOUt sidebar
+st.sidebar.title("About")
+st.sidebar.markdown("""
+### 🎯 WHAT IT DOES:
+This Deep Learning application specializes in high-accuracy image recognition. 
+Using a custom-trained **Convolutional Neural Network (CNN)**, it automates the 
+process of identifying and classifying complex visual data in seconds. This application 
+is made to get the immediate treatment for the plants right on the field to minimize 
+the need of geting advices and diagnosis from various resources, where in that time the infections in 
+the plants can be treated with various remedies the model gives like how to treat the infected 
+leaves, irrigation, pesticides to use and so. This reduces the time to treat the plants, decrease 
+the spread of infections and helps in increasing the yield.
+""")
+st.sidebar.subheader("🛠️ Tech Stack")
+tech_stack = [
+    "Python",
+    "TensorFlow",
+    "FastAPI",
+    "Streamlit",
+    "OpenCV",
+    "NumPy & Pandas",
+    "etc.."
+]
+for tech in tech_stack:
+    st.sidebar.markdown(f"- **{tech}**")
+
+st.sidebar.subheader("🔗 Source Code")
+st.sidebar.link_button("💻 Go to GitHub Repository", "https://github.com/cecsranjethaswinr23-collab/Botanical_Pathology_And_Targeted_Remediation", use_container_width=True)
+
+st.sidebar.markdown("### 👨‍💻 Developed By")
+st.sidebar.markdown("**Ranjeth Aswin Ravindran**")
+st.sidebar.caption("Data Scientist")
+
+# Email bar
+st.sidebar.markdown("""
+📧 **Contact:** cecsranjethaswinr23@gmail.com
+""")
+# --------------------------#
+
+
 # --- 1. TITLE & DESCRIPTION ---
 st.title("Botanical Pathology and Remediation System 🌿")
 st.markdown("""
-Upload a image of a tomato plant's leaf below. 
-A trained CNN model will analyze it via our FastAPI backend and return immediate localized treatment recommendations.
+Upload a image of a 🍅tomato plant's leaf below. A trained CNN 
+model specifically tailored for diseases in tomato plants will analyze it via our FastAPI backend and return immediate localized treatment recommendations.
 """)
 
 st.write("---")
+
 
 # --- 2. CONFIGURATION ---
 # Points to your local FastAPI backend server instance
@@ -25,19 +66,19 @@ BACKEND_URL = "http://127.0.0.1:8000/predict"
 
 # --- 3. IMAGE UPLOADER WIDGET ---
 uploaded_file = st.file_uploader(
-    "Choose a tomato plant leaf image...(only .jpg)", 
-    type=["jpg", "jpeg", "png"]
+    "Choose a tomato plant leaf image...(only 🪴.jpg)", 
+    type=["jpg"]
 )
 
 if uploaded_file is not None:
     # Read and display the image to the user instantly
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Sample Leaf Image", use_container_width=True)
+    st.image(image, caption="Uploaded Sample Leaf Image", width=400)
     
     st.write("---")
     
     # Add a prominent analysis trigger button
-    if st.button("🔍 Run Diagnostic Scan", type="primary"):
+    if st.button("🔍 Predict", type="primary"):
         with st.spinner("Uploading image to inference backend and analyzing..."):
             try:
                 # Convert the uploaded file into raw bytes to transfer over HTTP
