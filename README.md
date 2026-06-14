@@ -1,4 +1,5 @@
 # 🍅 Botanical Pathology And Targeted Remediation System
+
 An end-to-end, production-ready Deep Learning pipeline that classifies plant diseases and provides localized, actionable treatment protocols for farmers and people grow plants in their garden, balcony, etc... .This project specifically trained on ten tomato plant diseases is This project demonstrates real-time image inference, and secure automated deployment.
 
 ---
