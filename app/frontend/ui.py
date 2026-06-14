@@ -18,7 +18,7 @@ This Deep Learning application specializes in high-accuracy image recognition.
 Using a custom-trained **Convolutional Neural Network (CNN)**, it automates the 
 process of identifying and classifying complex visual data in seconds. This application 
 is made to get the immediate treatment for the plants right on the field to minimize 
-the need of geting advices and diagnosis from various resources, where in that time the infections in 
+the need of getting advices and diagnosis from various resources, where in that time the infections in 
 the plants can be treated with various remedies the model gives like how to treat the infected 
 leaves, irrigation, pesticides to use and so. This reduces the time to treat the plants, decrease 
 the spread of infections and helps in increasing the yield.
@@ -101,7 +101,7 @@ if uploaded_file is not None:
                     confi = result.get("confidence")
                     
                     # --- 4. DISPLAY DIAGNOSIS RESULTS ---
-                    st.success(f"### Diagnosis Result: **{disease_name}** with {confi:.2f}% confidense rate.")
+                    st.success(f"### Diagnosis Result: **{disease_name}** with {confi:.2f}% confidence rate.")
                     
                     st.markdown("### 📋 Recommended Treatment & Action Plan")
                     
