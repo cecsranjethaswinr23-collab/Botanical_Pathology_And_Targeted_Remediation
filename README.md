@@ -23,8 +23,7 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Language:** Python
 **Deep Learning:** TensorFlow, OpenCV (Image Preprocessing)
 **API & Backend:** FastAPI
-**Cloud Deployment:** Docker, AWS (EC2![Uploading plant doc Dashboard.jpg…]()
-)
+**Cloud Deployment:** Docker, AWS (EC2)
 **Frontend:** Streamlit
 
 ---
@@ -36,6 +35,14 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Secure Microservices Architecture:** Decoupled Frontend and Backend services orchestrated via Docker Compose for high availability and scalability.
 ---
 
+## Project Links & Author
+
+**Repository:** [GitHub](https://github.com/cecsranjethaswinr23-collab/Botanical_Pathology_And_Targeted_Remediation)
+**Author:** Ranjeth Aswin Ravindran
+**Connect with me:** 👋 [LinkedIn](www.linkedin.com/in/ranjeth-aswin-ravindran-018277253)
+                         [GitHub](https://github.com/cecsranjethaswinr23-collab)
+
+---
 ## 📐 Architecture & Pipeline Flow
 
 ```text
@@ -48,10 +55,3 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
  │   Result View   │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
  │ (Actionable Data)      │ (Indian Market DB)      │ (Probability Score)  │
  └─────────────────┘      └──────────────────┘      └──────────────────────┘
-
- ## Project Links & Author
-
-**Repository:** [GitHub](https://github.com/cecsranjethaswinr23-collab/Botanical_Pathology_And_Targeted_Remediation)
-**Author:** Ranjeth Aswin Ravindran
-**Connect with me:** 👋 [LinkedIn](www.linkedin.com/in/ranjeth-aswin-ravindran-018277253)
-                         [GitHub](https://github.com/cecsranjethaswinr23-collab)
