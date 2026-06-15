@@ -27,8 +27,8 @@ the spread of infections and helps in increasing the yield.
 # sidebar markdown 2
 st.sidebar.markdown("""
 #### 🫠 WHAT IT IS TRAINED ON:
-This model specifically trained on Nine disease in Tomato like bacteril spot, late blight,leaf mold, leaf spots, mosaic virus,
-target spot, curl virus, spider mites and also finds the healthy plant. 
+This model specifically trained on Nine disease in Tomato like bacterial spot, late blight, leaf mold, leaf spots, mosaic virus,
+target spot, yellow curl virus, spider mites and also finds the healthy plant. 
 
 """)
 st.sidebar.subheader("🛠️ Tech Stack")
