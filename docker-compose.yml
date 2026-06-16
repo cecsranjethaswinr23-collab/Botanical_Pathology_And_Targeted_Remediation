@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.backend
+      network: host
     container_name: plant_doc_backend
     ports:
       - "8000:8000"
