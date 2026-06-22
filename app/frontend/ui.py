@@ -70,7 +70,7 @@ st.write("---")
 
 # --- 2. CONFIGURATION ---
 # Points to your local FastAPI backend server instance
-BACKEND_URL = "http://127.0.0.1:8000/predict"
+BACKEND_URL = "http://backend:8000/predict"
 
 # --- 3. IMAGE UPLOADER WIDGET ---
 uploaded_file = st.file_uploader(

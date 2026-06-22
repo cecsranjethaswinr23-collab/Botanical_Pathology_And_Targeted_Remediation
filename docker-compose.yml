@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.backend
-      network: host
     container_name: plant_doc_backend
     ports:
       - "8000:8000"
@@ -16,6 +15,6 @@ services:
       dockerfile: Dockerfile.frontend
     container_name: plant_doc_frontend
     ports:
-      - "8501:8501"
+      - "7860:7860"
     depends_on:
       - backend
