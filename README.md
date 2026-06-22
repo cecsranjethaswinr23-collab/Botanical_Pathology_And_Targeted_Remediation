@@ -23,8 +23,9 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Language:** Python
 **Deep Learning:** TensorFlow, OpenCV (Image Preprocessing)
 **API & Backend:** FastAPI
-**Cloud Deployment:** Docker, AWS (ECR,EC2)
 **Frontend:** Streamlit
+**Cloud Deployment:** HuggingFace Space
+
 
 ---
 
@@ -32,7 +33,7 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 
 **Localized Remediation Data:** Outputs chemical treatments mapped specifically to trade names widely available in India.
 **Best-Practice Advisory:** Dynamically generates irrigation and hygiene protocols tailored to the diagnosed pathogen to prevent secondary spread.
-**Secure Microservices Architecture:** Decoupled Frontend and Backend services orchestrated via Docker Compose for high availability and scalability.
+**Secure Microservices Architecture:** Decoupled Frontend and Backend services orchestrated via HuggingFace spaces for high availability and scalability.
 ---
 
 ## Project Links & Author
