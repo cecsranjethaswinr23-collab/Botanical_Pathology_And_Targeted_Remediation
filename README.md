@@ -1,7 +1,6 @@
 # 🍅 Botanical Pathology And Targeted Remediation System
 
 An end-to-end, production-ready Deep Learning pipeline that classifies plant diseases and provides localized, actionable treatment protocols for farmers and people grow plants in their garden, balcony, etc... .This application specifically trained on ten tomato plants diseases and this application demonstrates real-time image inference, and secure automated deployment.
-
 ---
 
 ## 📱 Project Application Screenshots
@@ -9,7 +8,6 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 ### 1. User Interface & Image Analysis
 *The web interface allows users to upload leaf images, leveraging a CNN model for instant, high-accuracy disease diagnosis.*
 <img width="1905" height="885" alt="plant doc Dashboard" src="https://github.com/user-attachments/assets/38ec35f0-5c71-4170-a030-41c6f08b75ad" />
-
 
 ### 2. Treatment & Professional Guidance
 *Diagnostic results provide immediate, localized chemical treatment recommendations (Indian Market) and professional safety protocols.*
@@ -36,14 +34,13 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Deep Learning:** TensorFlow, OpenCV (Image Preprocessing)
 **Frontend:** Streamlit
 **Cloud Deployment:** HuggingFace Space
----
 
 ## 🚀 Key Features
 
 **Localized Remediation Data:** Outputs chemical treatments mapped specifically to trade names widely available in India.
 **Best-Practice Advisory:** Dynamically generates irrigation and hygiene protocols tailored to the diagnosed pathogen to prevent secondary spread.
 **Secure Microservices Architecture:** Decoupled Frontend and Backend services orchestrated via HuggingFace spaces for high availability and scalability.
----
+
 
 ## Project Links & Author
 
@@ -51,4 +48,4 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Author:** Ranjeth Aswin Ravindran
 **Connect with me:** 👋 [LinkedIn](www.linkedin.com/in/ranjeth-aswin-ravindran-018277253)
                          [GitHub](https://github.com/cecsranjethaswinr23-collab)
----
+
