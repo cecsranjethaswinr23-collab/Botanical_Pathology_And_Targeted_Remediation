@@ -19,6 +19,7 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 ---
 
 ## 📐 Architecture & Pipeline Flow
+```text
   ┌─────────────────┐      ┌──────────────────┐      ┌──────────────────────┐
   │   User Input    ├─────►│  Streamlit UI    ├─────►│    CNN Inference     │
   │  (Image Upload) │      │  (Data Mapping)  │      │   (Classification)   │
@@ -28,7 +29,7 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
   │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
   │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
   └─────────────────┘      └──────────────────┘      └──────────────────────┘
-  
+```
 ## 🛠️ Tech Stack & Tools
 
 **Language:** Python
