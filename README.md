@@ -27,7 +27,6 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
  │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
  │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
  └─────────────────┘      └──────────────────┘      └──────────────────────┘
----
 
 ## 🛠️ Tech Stack & Tools
 
