@@ -48,11 +48,11 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 
 ```text
  ┌─────────────────┐      ┌──────────────────┐      ┌──────────────────────┐
- │   User Input    ├─────►│  FastAPI Backend ├─────►│  CNN Inference Engine│
- │  (Image Upload) │      │  (Data Mapping)  │      │  (.h5 / SavedModel)  │
+ │   User Input    ├─────►│  Streamlit UI    ├─────►│    CNN Inference     │
+ │  (Image Upload) │      │  (Data Mapping)  │      │   (Classification)   │
  └─────────────────┘      └──────────────────┘      └──────────┬───────────┘
                                                                │
  ┌─────────────────┐      ┌──────────────────┐      ┌──────────▼───────────┐
- │   Result View   │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
- │ (Actionable Data)      │ (Indian Market DB)      │ (Probability Score)  │
+ │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
+ │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
  └─────────────────┘      └──────────────────┘      └──────────────────────┘
