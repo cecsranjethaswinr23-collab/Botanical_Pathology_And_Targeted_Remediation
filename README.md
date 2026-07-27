@@ -36,14 +36,19 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 ## 🛠️ Tech Stack & Tools
 
 **Language:** Python
+
 **Deep Learning:** TensorFlow, OpenCV (Image Preprocessing)
+
 **Frontend:** Streamlit
+
 **Cloud Deployment:** HuggingFace Space
 
 ## Project Links & Author
 
 **Repository:** [GitHub](https://github.com/cecsranjethaswinr23-collab/Botanical_Pathology_And_Targeted_Remediation)
+
 **Author:** Ranjeth Aswin Ravindran
+
 **Connect with me:** 👋 [LinkedIn](www.linkedin.com/in/ranjeth-aswin-ravindran-018277253)
                          [GitHub](https://github.com/cecsranjethaswinr23-collab)
 
