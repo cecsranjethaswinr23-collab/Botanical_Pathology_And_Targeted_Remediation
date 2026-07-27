@@ -17,17 +17,18 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 <img width="942" height="717" alt="plant doc result 2" src="https://github.com/user-attachments/assets/f4ced19a-b572-4d30-9703-ce4dea777ada" />
 
 ---
-## 📐 Architecture & Pipeline Flow
- ┌─────────────────┐      ┌──────────────────┐      ┌──────────────────────┐
- │   User Input    ├─────►│  Streamlit UI    ├─────►│    CNN Inference     │
- │  (Image Upload) │      │  (Data Mapping)  │      │   (Classification)   │
- └─────────────────┘      └──────────────────┘      └──────────┬───────────┘
-                                                               │
- ┌─────────────────┐      ┌──────────────────┐      ┌──────────▼───────────┐
- │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
- │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
- └─────────────────┘      └──────────────────┘      └──────────────────────┘
 
+## 📐 Architecture & Pipeline Flow
+  ┌─────────────────┐      ┌──────────────────┐      ┌──────────────────────┐
+  │   User Input    ├─────►│  Streamlit UI    ├─────►│    CNN Inference     │
+  │  (Image Upload) │      │  (Data Mapping)  │      │   (Classification)   │
+  └─────────────────┘      └──────────────────┘      └──────────┬───────────┘
+                                                                │
+  ┌─────────────────┐      ┌──────────────────┐      ┌──────────▼───────────┐
+  │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
+  │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
+  └─────────────────┘      └──────────────────┘      └──────────────────────┘
+  
 ## 🛠️ Tech Stack & Tools
 
 **Language:** Python
