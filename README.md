@@ -17,16 +17,25 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 <img width="942" height="717" alt="plant doc result 2" src="https://github.com/user-attachments/assets/f4ced19a-b572-4d30-9703-ce4dea777ada" />
 
 ---
+## 📐 Architecture & Pipeline Flow
+
+```text
+ ┌─────────────────┐      ┌──────────────────┐      ┌──────────────────────┐
+ │   User Input    ├─────►│  Streamlit UI    ├─────►│    CNN Inference     │
+ │  (Image Upload) │      │  (Data Mapping)  │      │   (Classification)   │
+ └─────────────────┘      └──────────────────┘      └──────────┬───────────┘
+                                                               │
+ ┌─────────────────┐      ┌──────────────────┐      ┌──────────▼───────────┐
+ │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
+ │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
+ └─────────────────┘      └──────────────────┘      └──────────────────────┘
 
 ## 🛠️ Tech Stack & Tools
 
 **Language:** Python
 **Deep Learning:** TensorFlow, OpenCV (Image Preprocessing)
-**API & Backend:** FastAPI
 **Frontend:** Streamlit
 **Cloud Deployment:** HuggingFace Space
-
-
 ---
 
 ## 🚀 Key Features
@@ -42,17 +51,4 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Author:** Ranjeth Aswin Ravindran
 **Connect with me:** 👋 [LinkedIn](www.linkedin.com/in/ranjeth-aswin-ravindran-018277253)
                          [GitHub](https://github.com/cecsranjethaswinr23-collab)
-
 ---
-## 📐 Architecture & Pipeline Flow
-
-```text
- ┌─────────────────┐      ┌──────────────────┐      ┌──────────────────────┐
- │   User Input    ├─────►│  Streamlit UI    ├─────►│    CNN Inference     │
- │  (Image Upload) │      │  (Data Mapping)  │      │   (Classification)   │
- └─────────────────┘      └──────────────────┘      └──────────┬───────────┘
-                                                               │
- ┌─────────────────┐      ┌──────────────────┐      ┌──────────▼───────────┐
- │  Result View of │◄─────┤ Treatment Lookup ├◄─────┤  Diagnosis Output    │
- │disease,treatment|      │ ( treatment DB)  |      │ (Probability Score)  │
- └─────────────────┘      └──────────────────┘      └──────────────────────┘
