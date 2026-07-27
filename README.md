@@ -2,6 +2,12 @@
 
 An end-to-end, production-ready Deep Learning pipeline that classifies plant diseases and provides localized, actionable treatment protocols for farmers and people grow plants in their garden, balcony, etc... .This application specifically trained on ten tomato plants diseases and this application demonstrates real-time image inference, and secure automated deployment.
 
+## 🚀 Key Features
+**💾 Localized Remediation Data:** Outputs chemical treatments mapped specifically to trade names widely available in India.
+
+**🌱 Best-Practice Advisory:** Dynamically generates irrigation and hygiene protocols tailored to the diagnosed pathogen to prevent secondary spread.
+
+**💻 Secure Microservices Architecture:** Services orchestrated via HuggingFace spaces for high availability and scalability.
 
 ## 📱 Project Application Screenshots
 
@@ -33,13 +39,6 @@ An end-to-end, production-ready Deep Learning pipeline that classifies plant dis
 **Deep Learning:** TensorFlow, OpenCV (Image Preprocessing)
 **Frontend:** Streamlit
 **Cloud Deployment:** HuggingFace Space
-
-## 🚀 Key Features
-
-**Localized Remediation Data:** Outputs chemical treatments mapped specifically to trade names widely available in India.
-**Best-Practice Advisory:** Dynamically generates irrigation and hygiene protocols tailored to the diagnosed pathogen to prevent secondary spread.
-**Secure Microservices Architecture:** Decoupled Frontend and Backend services orchestrated via HuggingFace spaces for high availability and scalability.
-
 
 ## Project Links & Author
 
